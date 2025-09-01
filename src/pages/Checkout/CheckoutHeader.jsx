@@ -5,7 +5,9 @@ import Logo from '../../assets/images/logo.png';
 import MobileLogo from '../../assets/images/mobile-logo.png';
 
 function CheckoutHeader({cart}) {
-  const itemCount = Array.isArray(cart) ? cart.length : 0;
+  const itemCount = Array.isArray(cart) 
+  ? cart.reduce((total, item) => total + item.quantity, 0) 
+  : 0;
 
   return (
     <div className="checkout-header">
