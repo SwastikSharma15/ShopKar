@@ -20,10 +20,20 @@ const CartItemDetails = ({ cartItem, loadCart }) => {
     await axios.put(`/api/cart-items/${cartItem.productId}`, {
       quantity: Number(newQuantity),
     });
-    
+
     setIsEditing(false);
     await loadCart();
   };
+
+  const handleQuantityKeyDown = (event) => {
+    if (event.key === "Enter") {
+      updateCartItem();
+    } else if (event.key === "Escape") {
+      setIsEditing(false);
+      setNewQuantity(cartItem.quantity);
+    }
+  };
+
   return (
     <Fragment>
       <img className="product-image" src={cartItem.product.image} />
@@ -43,6 +53,7 @@ const CartItemDetails = ({ cartItem, loadCart }) => {
                 onChange={(event) => {
                   setNewQuantity(event.target.value);
                 }}
+                onKeyDown={handleQuantityKeyDown}
                 className="quantity-input"
               />
             ) : (
