@@ -4,6 +4,7 @@ import "./HomePage.css";
 import { useEffect, useState } from "react";
 import ProductsGrid from "./ProductsGrid";
 import { useSearchParams } from "react-router";
+import NotificationBanner from "./NotificationBanner";
 
 function HomePage({cart, loadCart}) {
 
@@ -22,10 +23,11 @@ function HomePage({cart, loadCart}) {
 
   return (  
     <>
-      <title>Ecommerce Website</title>
+      <title>ShopKar Website</title>
       <link rel="icon" type="image/svg+xml" href="home-favicon.png" />
 
       <Header cart={cart}/>
+      <NotificationBanner />
 
       <div className="home-page">
         <ProductsGrid products={products} loadCart={loadCart}/>
