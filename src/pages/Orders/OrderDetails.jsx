@@ -1,4 +1,4 @@
-import BuyAgainIcon from "../../assets/images/icons/buy-again.png";
+import BuyAgainIcon from "../../assets/Images/icons/buy-again.png";
 import { Link } from "react-router";
 import { Fragment } from "react";
 import dayjs from "dayjs";

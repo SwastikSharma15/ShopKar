@@ -22,7 +22,7 @@ A modern e-commerce website built with React and Vite, featuring a responsive de
 
 ```
 ├── public/
-│   ├── images/
+│   ├── Images/
 │   │   ├── products/
 │   │   └── ratings/
 │   └── favicons
