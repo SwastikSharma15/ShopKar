@@ -1,8 +1,6 @@
 import { Link, useNavigate, useSearchParams } from "react-router";
 import CartIcon from "../assets/images/icons/cart-icon.png";
 import SearchIcon from "../assets/images/icons/search-icon.png";
-import LogoWhite from "../assets/images/logo-white.png";
-import MobileLogoWhite from "../assets/images/mobile-logo-white.png";
 import "./header.css";
 import { useState } from "react";
 
@@ -39,8 +37,10 @@ function Header({ cart }) {
     <div className="header">
       <div className="left-section">
         <Link to="/" className="header-link">
-          <img className="logo" src={LogoWhite} />
-          <img className="mobile-logo" src={MobileLogoWhite} />
+          <div className="shop-logo">
+            <span className="shop-text">Shop</span>
+            <span className="kar-text">Kar</span>
+          </div>
         </Link>
       </div>
 
