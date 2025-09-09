@@ -1,0 +1,62 @@
+.notification-banner {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 12px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-out;
+}
+
+.notification-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #856404;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.warning-icon {
+  margin-right: 8px;
+}
+
+.note-text {
+  font-weight: bold;
+}
+
+.pointer-icon {
+  margin-right: 8px;
+}
+
+.project-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .notification-content {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
