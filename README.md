@@ -48,12 +48,12 @@ A modern e-commerce website built with React and Vite, featuring a responsive de
 
 1. Clone the repository
 ```bash
-git clone https://github.com/SwastikSharma15/Ecommerce-Website-React.git
+git clone https://github.com/SwastikSharma15/ShopKar.git
 ```
 
 2. Navigate to project directory
 ```bash
-cd Ecommerce-Website-React
+cd ShopKar
 ```
 
 3. Install dependencies
