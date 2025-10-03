@@ -102,4 +102,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 SwastikSharma15 - [GitHub Profile](https://github.com/SwastikSharma15)
 
-Project Link: [https://github.com/SwastikSharma15/Ecommerce-Website-React](https://github.com/SwastikSharma15/Ecommerce-Website-React)
+Project Link: [https://shopkar-react.vercel.app](https://github.com/SwastikSharma15/ShopKar)
