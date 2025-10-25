@@ -8,7 +8,7 @@ function NotificationBanner() {
   const startTimer = () => {
     const newTimer = setTimeout(() => {
       setIsVisible(false);
-    }, 12000);
+    }, 5000000); 
     setTimer(newTimer);
   };
 
@@ -27,6 +27,11 @@ function NotificationBanner() {
     startTimer();
   };
 
+  const handleClose = () => {
+    setIsVisible(false);
+    if (timer) clearTimeout(timer);
+  };
+
   if (!isVisible) return null;
 
   return (
@@ -35,6 +40,11 @@ function NotificationBanner() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      {/* Close button on the left */}
+      <button className="close-btn" onClick={handleClose}>
+        ×
+      </button>
+
       <div className="notification-content">
         <span className="warning-icon">⚠️</span>
         <span className="note-text">Note: </span>
@@ -49,7 +59,7 @@ function NotificationBanner() {
           rel="noopener noreferrer"
           className="project-link"
         >
-          Amazon Clone Project
+          Ecommerce Project on LocalHost
         </a>
       </div>
     </div>
