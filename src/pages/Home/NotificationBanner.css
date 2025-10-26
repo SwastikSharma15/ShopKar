@@ -5,10 +5,26 @@
   right: 0;
   background-color: #fff3cd;
   border: 1px solid #ffeeba;
-  padding: 12px;
+  padding: 12px 50px 12px 40px; /* leave space for close button on left */
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.5s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px; /* adjust to align with padding */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #856404;
+  cursor: pointer;
+  padding: 0;
 }
 
 .notification-content {
