@@ -59,7 +59,7 @@ function NotificationBanner() {
           rel="noopener noreferrer"
           className="project-link"
         >
-          Ecommerce Project on LocalHost
+          Ecommerce Project on Local Database
         </a>
       </div>
     </div>
